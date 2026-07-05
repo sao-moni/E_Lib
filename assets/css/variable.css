@@ -1,7 +1,14 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --font-family: 'Arial', sans-serif;
-    --main-padding: 20px;
-    --font-heading: 'Helvetica Neue', sans-serif;
+    --color-background: #ffffff;
+    --color-text-primary: #333333;
+    --color-text-secondary: #777777;
+    --color-primary: #1a73e8;
+    --color-border: #f0f0f0;
+    --font-family-sans-serif: "Roboto", system-ui, -apple-system, sans-serif;
+    --font-weight-medium: 500;
+    --navbar-height: 70px;
+    --navbar-padding: 1.5rem;
+    --container-width: 1140px;
+    --border-radius: 6px;
+    --transition-speed: 0.3s;
 }
