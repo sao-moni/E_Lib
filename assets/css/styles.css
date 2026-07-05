@@ -24,7 +24,6 @@ body {
   align-items: center;
 
 }
-}
 .bungee-regular {
   font-family: "Bungee", sans-serif;
   font-weight: 400;
@@ -35,7 +34,7 @@ body {
   margin: 10px;
 }
 .navbar .title{
-  font-family: 'bungee';
+  font-family: 'Roboto';
   font-size: 25px;
   color: rgb(255, 9, 9);
   position: fixed;
@@ -43,18 +42,20 @@ body {
   text-align: center;
 }
 .navbar ul a{
-  font-family: 'Roboto';
+  font-family: 'Roboto';  gap: 10px;
   text-decoration: none;
-  color: rgb(87, 27, 228);
+  color: rgb(0, 0, 0);
 }
-.navbar ul li{
-  display: inline;
-
+.navbar ul{
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+  list-style: none;
 }
 .navbar .nav-text{
   display: flex;
   position: fixed;
-  width: 97%;
+  width: 94%;
   justify-content: end;
 
 }
@@ -63,15 +64,39 @@ body {
   height: 100vh;
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.gettyimages.com%2Fid%2F1428719730%2Fvideo%2Flibrary-books-and-bookshelf-for-reading-learning-or-knowledge-background-public-access.jpg%3Fs%3D640x640%26k%3D20%26c%3Dley35smAfLuy3JfBNycGmjTi8JtcNyKcbQ0Dtc7CObs%3D&f=1&nofb=1&ipt=a26749bae03a253ef8aeb903cb338d6b8664e11aaeaa1ae393585eaf5c365f6a');
   background-repeat: no-repeat;
+  inset: 0;
+  filter: blur(8px);
+  transform: scale(1.2);
   background-size: cover;
   background-position:center;
   position: fixed;
   z-index: 0;
 }
-.content-1 h1{
-  color: white;
-  position: relative;
+.typing{
+  color: blue;
+  size: 1rem;
+  width: 11ch;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
   top: 45%;
+  margin-left: 5%;
+  border-right: 2px solid green;
+  animation: typing 1s steps(11), blink 0.7s step-end infinite;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 11ch;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
 }
 .card-con{
   position: relative;
