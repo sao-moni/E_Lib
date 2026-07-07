@@ -1,61 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import 'variable.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "variable.css";
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: Roboto;
-  background-image: url('../img/background.webp');
+  font-family: var("--font-family-sans-serif");
 }
-header {
+.navbar {
+  background-color: rgba(253, 255, 255, 1);
   position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  outline: none;
-  width: 95%;
-  height: 50px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.30);
-  backdrop-filter: url(#glass);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 2.2);
-}
-header .logo {
-  height: 40px;
-  margin: 1.5%;
-}
-header .title {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 10px;
-  color: var(--primary-color); 
-}
-header .nav-bar {
-  margin-left: auto;
-  margin-right: 20px;
+  z-index: 1000;
+  width: 100%;
+  height: 70px;
+  transition: top 0.3s;
+  box-shadow: 1px;
   display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  box-shadow:0px 0.5px 3px rgba(0,0,0);
+  cursor: pointer;
 }
-header .nav-links {
-  list-style: none;
-  display: inline-flex;
+.navbar .logo {
+  height: 50px;
+  margin: 10px;
 }
-header .nav-links li a{
+.navbar .title {
+  font-family: "Roboto";
+  font-size: 25px;
+  color: rgb(64, 50, 255);
+  width: 10ch;
+}
+.navbar ul a {
+  font-family: "Roboto";
+  font-weight: 600;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 10px 15px;
-  transition: background-color 0.6s, color 0.3s;
+  color: rgb(0, 0, 0);
 }
-header .nav-links li a:hover {
-  color: var(--primary-color); 
-  border-radius: 5px;
+.navbar .nav-text ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
 }
-header .nav-links li:nth-child(1) a {
-    background-color: #f0f0f0;
-    color: var(--primary-color); 
-    border-radius: 5px;
+.nav-text a.active{
+  color: blue;
+}
+.navbar .nav-text {
+  display: flex;
+  position: relative;
+  width: 50%;
+  justify-content: start;
+}
+.search_box{
+  display: flex;
+  height: 45px;
+  background-color: rgb(0, 47, 255);
+  border-radius: 15px;
+  justify-items: center;
+}
+.search_box input{
+  border: 0px;
+  outline: none;
+  background:transparent;
+  padding: 8px 0;
+}
+.search_box input::placeholder{
+  color:rgb(252, 252, 255);
+  font-style: italic;
+  font-size:1rem;
+}
+.menu{
+  display:none
+}
+@media (max-width:767px){
+  .navbar ul li a {
+    display: none;
+  }
+  .search_box{
+    display:none;
+  }
+  .menu{
+    display: flex;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+}
+
+.section_1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.section_1 h1,h2{
+  font-size: calc(6vw + 1rem);
+  color: grey;
+  position: relative;
+  left: 5%;
+}
+.typing{
+  color: var(--color-primary);
+  width: 9ch;
+  border-right:solid rgb(0, 0, 0) 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(9) infinite,blink 0.7s infinite;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  40%{
+    width: 10ch;
+  }
+  80%{
+    width:10ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+.homeimg{
+  display: block;
+}
+footer{
+  background-color: rgb(59, 59, 255);
+  height: 30vh;
+
 }
