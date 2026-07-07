@@ -19,7 +19,7 @@ body {
   display: flex;
   padding: 5px 10px;
   align-items: center;
-  box-shadow:0px 0.5px 3px rgba(0,0,0);
+  border-bottom:1px solid black;
   cursor: pointer;
 }
 .navbar .logo {
@@ -56,15 +56,26 @@ body {
 .search_box{
   display: flex;
   height: 45px;
-  background-color: rgb(0, 47, 255);
-  border-radius: 15px;
-  justify-items: center;
+  width: 200px;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+  padding: 0px 8px 0px 8px;
+}
+.search-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .search_box input{
   border: 0px;
   outline: none;
   background:transparent;
   padding: 8px 0;
+}
+.search_box button{
+  background: transparent;
+  border: 0px;
+  color: white;
 }
 .search_box input::placeholder{
   color:rgb(252, 252, 255);
@@ -96,11 +107,11 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 255, 255);
 }
 .section_1 h1,h2{
   font-size: calc(6vw + 1rem);
-  color: grey;
+  color: var();
   position: relative;
   left: 5%;
 }
@@ -132,10 +143,19 @@ body {
   }
 }
 .homeimg{
-  display: block;
+  display: flex;
+  width: cal(5vw+5%);
+  height: calc(5vw+5%);
+}
+.homeimg img{
+  overflow:hidden;
+}
+.section_2{
+  width:100%;
+  height: 100vh;
 }
 footer{
-  background-color: rgb(59, 59, 255);
+  background-color: var(--color-primary);
   height: 30vh;
 
 }
