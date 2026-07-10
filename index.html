@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Library - Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-    <header class="navbar" id="navbar">
-        <img src="assets/img/Untitled design(3).png" alt="Logo" class="logo">
-        <h1 class="title">E-Library</h1>
-        <nav class="nav-text">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="browse.html">Browse</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
-        <button class="menu">Menu</button>
-        <div class="search_box">
-            <form class="search-form">
-                <input type="text" name="" id="" placeholder="Search Book here.." class="search">
-                <button type="submit" class="search">
-                    <span class="material-symbols-outlined">
-                    search
-                    </span>
-                </button>
-            </form>
-        </div>
-    </header>
-    <section class="section_1">
-        <div class="title">
-            <h1 class="">Welcome home to</h1>
-            <h2 class="typing">E-Library</h2>
-        </div>
-        <div class="homeimg">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F2888%2F2888404.png&f=1&nofb=1&ipt=f80c61f82c0fafee305fed42dc90486c4510b9b87f3249e271ce72a52e68d365" alt="Image of a Library">
-        </div>
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="index.html" aria-label="E-Library Home">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <span>E-Library</span>
+      </a>
+
+      <button class="navbar__toggle" type="button" aria-label="Toggle navigation" aria-controls="navbarMenu" aria-expanded="false">
+        <span class="navbar__burger" aria-hidden="true"><span></span></span>
+      </button>
+
+      <nav class="navbar__menu" aria-label="Primary" id="navbarMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Account</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="section-1-inner">
+        <h1 class="section-1-title">Discover the World of Knowledge</h1>
+        <p class="section-1-description">Explore a vast collection of books, articles, and more with our e-library.</p>
+        <a href="#" class="btn">Discover Now</a>
+      </div>
     </section>
-    <footer>
-        <p>Copy Right</p>
-    </footer>
-    <script src="assets/js/main.js"></script>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div>
+        <h4>E-Library</h4>
+        <p>E--library website design for all learner no matter where they are and no matter who they are.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p>
+          Email: genzstem@gmail.com<br />
+          Hours: Mon–Fri, 9am–5pm
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">© <span id="year"></span> E-Library. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
