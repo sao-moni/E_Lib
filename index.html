@@ -1,70 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Library - Home</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | E-Library</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
-  <header class="navbar" role="banner">
-    <div class="navbar__inner">
-      <a class="navbar__brand" href="index.html" aria-label="E-Library Home">
-        <img src="assets/img/logo.png" alt="Logo" />
-        <span>E-Library</span>
-      </a>
 
-      <button class="navbar__toggle" type="button" aria-label="Toggle navigation" aria-controls="navbarMenu" aria-expanded="false">
-        <span class="navbar__burger" aria-hidden="true"><span></span></span>
-      </button>
-
-      <nav class="navbar__menu" aria-label="Primary" id="navbarMenu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Account</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="section-1">
-      <div class="section-1-inner">
-        <h1 class="section-1-title">Discover the World of Knowledge</h1>
-        <p class="section-1-description">Explore a vast collection of books, articles, and more with our e-library.</p>
-        <a href="#" class="btn">Discover Now</a>
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo">
+      <div class="title">
+        <h1>E-Library</h1>
+        <p>Education is our prioutity</p>
       </div>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Search books...">
+      <button>
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+  </header>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="Account.html">Account</a>
+    <button class="btn" id="menu-Btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <div class="menu-panel" id="menu-panel">
+    <div class="logo">
+      <img src="assets/img/logo.png" alt="Logo">
+      <div class="title">
+        <h1>E-Library</h1>
+        <p>Education is our prioutity</p>
+      </div>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="Account.html">Account</a>
+  </div>
+  <!-- Main -->
+  <main class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Category</h2>
+      <ul>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#language">Language</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#other">Other</a></li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <section class="content">
+      <div class="card-group">
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <a href="#" class="read-now">Read now</a>
+            <h2 class="card-title">Card Title</h2>
+          </div>
+        </div>
+        <div class="switch-content">
+        </div>
     </section>
   </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-      <div>
-        <h4>E-Library</h4>
-        <p>E--library website design for all learner no matter where they are and no matter who they are.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="footer__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <p>
-          Email: genzstem@gmail.com<br />
-          Hours: Mon–Fri, 9am–5pm
-        </p>
-      </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <h2>E-Library</h2>
+      <p>Learning Anywhere Anytime.</p>
     </div>
-    <div class="footer__bottom">© <span id="year"></span> E-Library. All rights reserved.</div>
+    <div class="footer-center">
+      <h3>Quick Links</h3>
+      <p>Home</p>
+      <p>Books</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-telegram"></i>
+    </div>
+
   </footer>
-
   <script src="assets/js/main.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
-</html>
 
+</html>

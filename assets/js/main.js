@@ -1,41 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.querySelector('.navbar__toggle');
-  const menu = document.querySelector('.navbar__menu');
+const menuBtn = document.getElementById('menu-Btn');
+const menuPanel = document.getElementById('menu-panel');
 
-  // Mobile menu toggle
-  if (toggleBtn && menu) {
-    toggleBtn.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('is-open');
-      toggleBtn.setAttribute('aria-expanded', String(isOpen));
-    });
+if (menuBtn && menuPanel) {
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menuPanel.style.left === '0' || menuPanel.classList.contains('is-open');
 
-    // Close menu when a link is clicked
-    menu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        menu.classList.remove('is-open');
-        toggleBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
+    if (isOpen) {
+      menuPanel.classList.remove('is-open');
+      menuPanel.style.left = '-250px';
+      return;
+    }
 
-  // Hide/reveal navbar on scroll up/down (consistent across pages)
-  const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    let lastScrollY = window.scrollY;
+    menuPanel.classList.add('is-open');
+    menuPanel.style.display = 'flex';
+    menuPanel.style.left = '0';
+  });
 
-    window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
-      const navbarHeight = navbar.offsetHeight;
-
-      // Scrolling down past the navbar height => hide
-      if (currentScrollY > lastScrollY && currentScrollY > navbarHeight) {
-        navbar.classList.add('is-hidden');
-      } else {
-        navbar.classList.remove('is-hidden');
-      }
-
-      lastScrollY = currentScrollY;
-    });
-  }
-});
-
+  document.addEventListener('click', (e) => {
+    const isClickInside = menuPanel.contains(e.target) || menuBtn.contains(e.target);
+    if (!isClickInside && (menuPanel.style.left === '0' || menuPanel.classList.contains('is-open'))) {
+      menuPanel.classList.remove('is-open');
+      menuPanel.style.left = '-250px';
+    }
+  });
+}
