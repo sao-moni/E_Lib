@@ -143,9 +143,6 @@ nav button:focus {
    nav a {
       display: none;
    }
-   .sidebar {
-      display: none;
-   }
 }
 .container {
    display: flex;
@@ -202,28 +199,19 @@ nav button:focus {
    overflow: hidden;
 }
 .green{
-   background-color: green;
+   background-color: rgb(0, 202, 0);
    width: 68%;
    height: 100%;
 }
-@media (max-width: 992px) {
-   .card-group {
-      grid-template-columns: repeat(3, 1fr);
-   }
+.card{
+  background-color: #272727;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
 }
-
-@media (max-width: 768px) {
-   .card-group {
-      grid-template-columns: repeat(2, 1fr);
-   }
-}
-
-@media (max-width: 480px) {
-   .card-group {
-      grid-template-columns: 1fr;
-   }
-}
-
 
 footer {
    margin-top: 40px;
