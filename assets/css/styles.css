@@ -245,6 +245,12 @@ nav button:focus {
   gap: 10px;
 }
 
+.result-count {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
 .card-title {
   margin: 0;
   font-size: 1.25rem;
@@ -260,6 +266,46 @@ nav button:focus {
 
 .read-now:hover {
   text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.page-btn {
+  padding: 10px 20px;
+  background: #123d8d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #0f2f6d;
+}
+
+.page-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.page-indicator {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: 500;
 }
 
 footer {
