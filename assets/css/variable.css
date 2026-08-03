@@ -1,8 +1,8 @@
 :root {
-    --color-background: #ffffff;
+    --color-background: #F9F6EE;
     --color-text-primary: #333333;
     --color-text-secondary: #777777;
-    --color-primary: #1a73e8;
+    --color-primary: #123d8d;
     --color-border: #f0f0f0;
     --font-family-sans-serif: "Roboto", system-ui, -apple-system, sans-serif;
     --font-weight-medium: 500;
@@ -11,4 +11,6 @@
     --container-width: 1140px;
     --border-radius: 6px;
     --transition-speed: 0.3s;
+    --page-max-width: 1200px;
+    --page-padding-x: 20px;
 }
