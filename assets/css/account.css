@@ -104,6 +104,7 @@ nav button:focus {
    background: transparent;
 }
 
+
 .menu-panel {
    flex-direction: column;
    position: fixed;
@@ -111,7 +112,7 @@ nav button:focus {
    left: -250px;
    width: 250px;
    height: 100vh;
-   background:rgb(244, 246, 253,0.99);
+   background: rgb(244, 246, 253, 0.99);
    padding: 20px;
    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
    transition: all 0.3s ease-in-out;
@@ -124,32 +125,39 @@ nav button:focus {
    margin: 25px;
    font-weight: bold;
 }
+
 @media only screen and (max-width:768px) {
-   header{
+   header {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 8px;
    }
+
    .container {
       flex-direction: column;
    }
+
    nav {
       justify-content: end;
    }
+
    nav button {
       display: block;
    }
+
    nav a {
       display: none;
    }
 }
+
 .container {
    display: flex;
    width: 90%;
    margin: 40px auto;
    gap: 30px;
 }
+
 .content {
    display: flex;
    width: 100%;
@@ -159,41 +167,60 @@ nav button:focus {
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
-.side-content{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    padding: 35px;
-    background-color: #123d8d;
+
+.side-content {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   width: 250px;
+   padding: 35px;
+   background-color: #123d8d;
+   position: relative;
 }
-.profile{
-    width: 150px;
-    height: 150px;
-    border: solid #ffffff 1px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #f1f1f1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
+.side-content #edit-icon {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   align-items: right;
+   justify-content: right;
+   display: flex;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   font-size: 20px;
 }
-.profile-name{
+
+.profile {
+   width: 150px;
+   height: 150px;
+   border: solid #ffffff 1px;
+   border-radius: 50%;
+   overflow: hidden;
+   background: #f1f1f1;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+   display: flex;
+   align-items: center;
+   align-self: center;
+   justify-content: center;
+}
+
+.profile-name {
    color: #f1f1f1;
    text-align: center;
 
 }
-.profile-picture{
-    width: 100px;
-    height: 100px;
+
+.profile-picture {
+   width: 100px;
+   height: 100px;
 }
-.profile-info{
+
+.profile-info {
    color: white;
    font-weight: 700;
 }
-.act-bar{
+
+.act-bar {
    background-color: white;
    margin-top: 8px;
    width: 100%;
@@ -201,7 +228,8 @@ nav button:focus {
    height: 5px;
    overflow: hidden;
 }
-.green{
+
+.green {
    background-color: rgb(0, 202, 0);
    width: 68%;
    height: 100%;
@@ -209,27 +237,178 @@ nav button:focus {
 
 
 .book-panel {
-    height: 100%;
-    padding: 35px;
+   height: 100%;
+   padding: 35px;
 }
+.article .nd-bd{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5px 10px;
+}
+.article .fa-regular.fa-heart.st-text{
+   margin: 3px 20px;
+}
+.article .fa-regular.fa-heart.st-text span{
+   margin: 3px 3px;
+}
+/*fav card*/
+.fav{
+   height: 200px;
+   width: 150px;
+   margin: 20px;
+   border: 1px solid black;
+   background: #F0F0F0;
+   border-radius: 3px;
+   box-shadow: 3px 3px rgba(0, 0, 0, 0.277);
+}
+.fav:nth-child(1) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(1) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(1) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+.fav:nth-child(2) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(2) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(2) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+.fav:nth-child(3) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(3) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(3) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+.fav:nth-child(4) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(4) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(4) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+.fav:nth-child(5) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(5) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(5) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+.fav:nth-child(6) > img{
+   margin: 10px 10px 5px 10px;
+   border-radius: 5px;
+   width: 128px;
+   height: 150px;
+}
+.fav:nth-child(6) #title{
+   font-size: 11px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 3px;
+}
+.fav:nth-child(6) #dct{
+   font-size: 10px;
+   text-align: center;
+}
+hr{
+   margin: 0px 20px ;
+}
+.nd-icon i{
+   margin: 3px 20px;
+}
+.nd-icon span{
+   font-weight: normal;
+   margin: 3px 3px;
+}
+/* Table */
 
-    
+.Reading-H{
+   width:100%;
+   margin: 10px 10px 5px 10px;
+   border-radius: 16px;
+   border-collapse:collapse;
+}
+th{
+   background:#f5f7fb;
+}
+th,td{
+   padding: 20px;
+   text-align:left;
+}
+tr{
+   border-bottom:1px;
+}
+button{
+   margin-right: 10px;
+   background:#123d8d;
+   color:white;
+   border:none;
+   padding:8px 16px;
+   border-radius:6px;
+   cursor:pointer;
+}
 footer {
    margin-top: 40px;
    display: flex;
    justify-content: space-around;
    background: #123d8d;
    color: white;
-   padding: 40px;
+   padding: 20px;
 }
-
 footer i {
    font-size: 28px;
    margin: 10px;
    cursor: pointer;
    transition: .3s;
 }
-
 footer i:hover {
    color: gold;
 }
