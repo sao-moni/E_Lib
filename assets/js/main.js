@@ -25,16 +25,6 @@ if (menuBtn && menuPanel) {
 
 const PER_PAGE = 30;
 
-const categoryColors = {
-  Technology: '#1a73e8',
-  Philosophy: '#8e24aa',
-  Science: '#00acc1',
-  Leadership: '#e53935',
-  Language: '#43a047',
-  History: '#fb8c00',
-  Other: '#6d4c41'
-};
-
 const cardGroup = document.getElementById('card-group');
 const resultCount = document.getElementById('result-count');
 const searchInput = document.querySelector('.search input');
@@ -71,15 +61,13 @@ function renderBooks() {
     return;
   }
 
-  cardGroup.innerHTML = pageBooks.map(book => {
-    const color = categoryColors[book.category] || '#6d4c41';
-    const encodedTitle = encodeURIComponent(book.title);
+cardGroup.innerHTML = pageBooks.map(book => {
     return `
-      <div class="card">
-        <img src="https://placehold.co/400x600/${color.replace('#', '')}/ffffff?text=${encodedTitle}" alt="${book.title}">
-        <div class="card-content">
-          <a href="#" class="read-now">Read now</a>
-          <h2 class="card-title">${book.title}</h2>
+      <div class="card fav-card">
+        <div class="fav-card-inner">
+          <img src="${book.cover}" alt="${book.title}">
+          <p id="title">${book.title}</p>
+          <p id="dct">${book.category}</p>
         </div>
       </div>
     `;
