@@ -246,6 +246,47 @@ nav button:focus {
   gap: 10px;
 }
 
+/* fav card */
+.fav-card {
+  background: #F0F0F0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  align-items: center;
+  display: flex;
+}
+
+.fav-card .fav-card-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fav-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: #e0e0e0;
+}
+
+.fav-card #title {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.fav-card #dct {
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+}
+
 .result-count {
   margin-bottom: 20px;
   font-size: 0.95rem;
