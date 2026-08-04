@@ -259,6 +259,14 @@ nav button:focus {
 .article .fa-regular.fa-heart.st-text span{
    margin: 3px 3px;
 }
+@media (max-width: 768px) {
+   .article {
+      display: none;
+   }
+   .side-content{
+      width: 100%;
+   }
+}
 /*fav card*/
 .fav{
    height: 200px;

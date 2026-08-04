@@ -54,7 +54,6 @@ function renderBooks() {
   const pageBooks = filtered.slice(start, end);
 
   resultCount.textContent = `Showing ${filtered.length} of ${BOOKS.length} books`;
-
   if (filtered.length === 0) {
     cardGroup.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#888;">No books found.</div>';
     paginationContainer.innerHTML = '';
