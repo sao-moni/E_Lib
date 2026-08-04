@@ -13,4 +13,25 @@
     --transition-speed: 0.3s;
     --page-max-width: 1200px;
     --page-padding-x: 20px;
+
+    /* Additional colors referenced across CSS files */
+    --color-white: #ffffff;
+    --color-body-bg: #f4f6fb;
+    --color-border-light: #ccc;
+    --color-border-soft: #eee;
+    --color-text-light: #555;
+    --color-text-muted: #666;
+    --color-text-placeholder: #888;
+    --color-primary-dark: #0f2f6d;
+    --color-link: #0066cc;
+    --color-accent: gold;
+    --color-hover: #f1f6ff;
+    --color-table-header: #f5f7fb;
+    --color-card-bg: #f8fbff;
+    --color-contact-bg: #eef5ff;
+    --color-fav-bg: #f0f0f0;
+    --color-profile-bg: #f1f1f1;
+    --color-img-placeholder: #e0e0e0;
+    --color-login-grad-1: #d0ccf8;
+    --color-login-grad-2: #fbf9f9;
 }

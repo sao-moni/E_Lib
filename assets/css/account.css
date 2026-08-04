@@ -1,3 +1,4 @@
+@import url('variable.css');
 * {
    margin: 0;
    padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-   background: #f4f6fb;
+   background: var(--color-body-bg);
 }
 
 a {
@@ -20,7 +21,7 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 20px 60px;
-   background: white;
+   background: var(--color-white);
    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
 }
 
@@ -31,11 +32,11 @@ header {
 }
 
 .logo .title h1 {
-   color: #123d8d;
+   color: var(--color-primary);
 }
 
 .logo .title p {
-   color: #555;
+   color: var(--color-text-light);
 }
 
 .logo img {
@@ -50,22 +51,22 @@ header {
 .search input {
    width: 300px;
    padding: 10px;
-   border: 1px solid #ccc;
+   border: 1px solid var(--color-border-light);
    border-radius: 30px 0 0 30px;
    outline: none;
 }
 
 .search button {
    width: 50px;
-   background: #123d8d;
-   color: white;
+   background: var(--color-primary);
+   color: var(--color-white);
    border: none;
    border-radius: 0 30px 30px 0;
    cursor: pointer;
 }
 
 nav {
-   background: #123d8d;
+   background: var(--color-primary);
    width: 100%;
    height: 60px;
    padding: 15px;
@@ -75,20 +76,20 @@ nav {
 }
 
 nav a {
-   color: white;
+   color: var(--color-white);
    text-decoration: none;
    margin: 25px;
    font-weight: bold;
 }
 
 nav a:hover {
-   color: gold;
+   color: var(--color-accent);
 }
 
 nav button {
    background: transparent;
    border: none;
-   color: white;
+   color: var(--color-white);
    font-weight: bold;
    cursor: pointer;
    float: right;
@@ -96,7 +97,7 @@ nav button {
 }
 
 nav button:hover {
-   color: gold;
+   color: var(--color-accent);
 }
 
 nav button:focus {
@@ -120,7 +121,7 @@ nav button:focus {
 }
 
 .menu-panel a {
-   color: #123d8d;
+   color: var(--color-primary);
    text-decoration: none;
    margin: 25px;
    font-weight: bold;
@@ -162,7 +163,7 @@ nav button:focus {
    display: flex;
    width: 100%;
    flex-direction: row;
-   background: white;
+   background: var(--color-white);
    overflow: hidden;
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
@@ -174,7 +175,7 @@ nav button:focus {
    flex-direction: column;
    width: 250px;
    padding: 35px;
-   background-color: #123d8d;
+   background-color: var(--color-primary);
    position: relative;
 }
 .side-content #edit-icon {
@@ -193,10 +194,10 @@ nav button:focus {
 .profile {
    width: 150px;
    height: 150px;
-   border: solid #ffffff 1px;
+   border: solid var(--color-white) 1px;
    border-radius: 50%;
    overflow: hidden;
-   background: #f1f1f1;
+   background: var(--color-profile-bg);
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
    display: flex;
    align-items: center;
@@ -205,7 +206,7 @@ nav button:focus {
 }
 
 .profile-name {
-   color: #f1f1f1;
+   color: var(--color-profile-bg);
    text-align: center;
 
 }
@@ -216,12 +217,12 @@ nav button:focus {
 }
 
 .profile-info {
-   color: white;
+   color: var(--color-white);
    font-weight: 700;
 }
 
 .act-bar {
-   background-color: white;
+   background-color: var(--color-white);
    margin-top: 8px;
    width: 100%;
    border-radius: 50px;
@@ -257,8 +258,8 @@ nav button:focus {
    height: 200px;
    width: 150px;
    margin: 20px;
-   border: 1px solid black;
-   background: #F0F0F0;
+   border: 1px solid var(--color-text-primary);
+   background: var(--color-fav-bg);
    border-radius: 3px;
    box-shadow: 3px 3px rgba(0, 0, 0, 0.277);
 }
@@ -377,7 +378,7 @@ hr{
    border-collapse:collapse;
 }
 th{
-   background:#f5f7fb;
+   background:var(--color-table-header);
 }
 th,td{
    padding: 20px;
@@ -388,8 +389,8 @@ tr{
 }
 button{
    margin-right: 10px;
-   background:#123d8d;
-   color:white;
+   background:var(--color-primary);
+   color:var(--color-white);
    border:none;
    padding:8px 16px;
    border-radius:6px;
@@ -399,8 +400,8 @@ footer {
    margin-top: 40px;
    display: flex;
    justify-content: space-around;
-   background: #123d8d;
-   color: white;
+   background: var(--color-primary);
+   color: var(--color-white);
    padding: 20px;
 }
 footer i {
@@ -410,5 +411,5 @@ footer i {
    transition: .3s;
 }
 footer i:hover {
-   color: gold;
+   color: var(--color-accent);
 }

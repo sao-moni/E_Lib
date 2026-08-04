@@ -8,7 +8,7 @@
 }
 
 body {
-   background: #f4f6fb;
+   background: var(--color-body-bg);
 }
 
 a {
@@ -21,7 +21,7 @@ header {
    justify-content: space-between;
    align-items: center;
    padding: 20px 60px;
-   background: white;
+   background: var(--color-white);
    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
 }
 
@@ -32,11 +32,11 @@ header {
 }
 
 .logo .title h1 {
-   color: #123d8d;
+   color: var(--color-primary);
 }
 
 .logo .title p {
-   color: #555;
+   color: var(--color-text-light);
 }
 
 .logo img {
@@ -51,22 +51,22 @@ header {
 .search input {
    width: 300px;
    padding: 10px;
-   border: 1px solid #ccc;
+   border: 1px solid var(--color-border-light);
    border-radius: 30px 0 0 30px;
    outline: none;
 }
 
 .search button {
    width: 50px;
-   background: #123d8d;
-   color: white;
+   background: var(--color-primary);
+   color: var(--color-white);
    border: none;
    border-radius: 0 30px 30px 0;
    cursor: pointer;
 }
 
 nav {
-   background: #123d8d;
+   background: var(--color-primary);
    width: 100%;
    height: 60px;
    padding: 15px;
@@ -76,20 +76,20 @@ nav {
 }
 
 nav a {
-   color: white;
+   color: var(--color-white);
    text-decoration: none;
    margin: 25px;
    font-weight: bold;
 }
 
 nav a:hover {
-   color: gold;
+   color: var(--color-accent);
 }
 
 nav button {
    background: transparent;
    border: none;
-   color: white;
+   color: var(--color-white);
    font-weight: bold;
    cursor: pointer;
    float: right;
@@ -97,7 +97,7 @@ nav button {
 }
 
 nav button:hover {
-   color: gold;
+   color: var(--color-accent);
 }
 
 nav button:focus {
@@ -120,7 +120,7 @@ nav button:focus {
 }
 
 .menu-panel a {
-   color: #123d8d;
+   color: var(--color-primary);
    text-decoration: none;
    margin: 25px;
    font-weight: bold;
@@ -157,7 +157,7 @@ nav button:focus {
 
 .sidebar {
    width: 250px;
-   background: white;
+   background: var(--color-white);
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
    height: fit-content;
@@ -166,8 +166,8 @@ nav button:focus {
 }
 
 .sidebar h2 {
-   background: #123d8d;
-   color: white;
+   background: var(--color-primary);
+   color: var(--color-white);
    padding: 18px;
    border-radius: 10px 10px 0 0;
 }
@@ -178,18 +178,18 @@ nav button:focus {
 
 .sidebar li {
    padding: 18px;
-   border-bottom: 1px solid #eee;
+   border-bottom: 1px solid var(--color-border-soft);
    cursor: pointer;
 }
 
 .sidebar li:hover {
-   background: #f1f6ff;
-   color: #123d8d;
+   background: var(--color-hover);
+   color: var(--color-primary);
 }
 
 .content {
    flex: 1;
-   background: white;
+   background: var(--color-white);
    padding: 35px;
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
@@ -222,21 +222,21 @@ nav button:focus {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  border: 1px solid #eee;
+  border: 1px solid var(--color-border-soft);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  background-color: #e0e0e0;
+  background-color: var(--color-img-placeholder);
 }
 
 .card-content {
@@ -249,7 +249,7 @@ nav button:focus {
 .result-count {
   margin-bottom: 20px;
   font-size: 0.95rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .card-title {
@@ -259,7 +259,7 @@ nav button:focus {
 }
 
 .read-now {
-  color: #0066cc;
+  color: var(--color-link);
   text-decoration: none;
   font-weight: bold;
   order: 2;
@@ -276,13 +276,13 @@ nav button:focus {
   gap: 15px;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border-soft);
 }
 
 .page-btn {
   padding: 10px 20px;
-  background: #123d8d;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-white);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -295,17 +295,17 @@ nav button:focus {
 }
 
 .page-btn:hover:not(:disabled) {
-  background: #0f2f6d;
+  background: var(--color-primary-dark);
 }
 
 .page-btn:disabled {
-  background: #ccc;
+  background: var(--color-border-light);
   cursor: not-allowed;
 }
 
 .page-indicator {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--color-text-light);
   font-weight: 500;
 }
 
@@ -313,8 +313,8 @@ footer {
    margin-top: 40px;
    display: flex;
    justify-content: space-around;
-   background: #123d8d;
-   color: white;
+   background: var(--color-primary);
+   color: var(--color-white);
    padding: 40px;
 }
 
@@ -326,5 +326,5 @@ footer i {
 }
 
 footer i:hover {
-   color: gold;
+   color: var(--color-accent);
 }

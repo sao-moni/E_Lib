@@ -11,13 +11,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #d0ccf8, #fbf9f9);    border-radius: 30px;
+    background: linear-gradient(135deg, var(--color-login-grad-1), var(--color-login-grad-2));
+    border-radius: 30px;
 }
 .container{
     position: relative;
     width: 850px;
     height: 550px;
-    background: #fff;
+    background: var(--color-white);
     margin:20px;
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
@@ -28,10 +29,10 @@ body{
     right: 0;
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: var(--color-white);
     display: flex;
     align-items: center;
-    color: #000000;
+    color: var(--color-text-primary);
     text-align: center;
     padding: 40px;
     z-index: 1;
@@ -54,7 +55,7 @@ form{
     margin: -10px 0;
 }
 .input{
-    border: 1px solid black;
+    border: 1px solid var(--color-text-primary);
     border-radius: 8px;
     position: relative;
     margin: 30px 0;
@@ -62,17 +63,17 @@ form{
 .input input{
     width: 100%;
     padding: 13px 50px 13px 20px;
-    background: #fff;
+    background: var(--color-white);
     border-radius: 8px;
     outline: none;
     border: none;
-    color: black;
+    color: var(--color-text-primary);
     font-weight: 500;
     font-size: 16px;
 }
 .input input::placeholder{
     font-weight: 400;
-    color: #888;
+    color: var(--color-text-placeholder);
 }
 .input i{
     position: absolute;
@@ -87,7 +88,7 @@ form{
 }
 .forgot-link a{
     font-size: 14.5px;
-    color: #333;
+    color: var(--color-text-primary);
     text-decoration: none;
 }
 .btn{
@@ -99,7 +100,7 @@ form{
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #fff;
+    color: var(--color-white);
     font-weight: 600;
 }
 .container p{
@@ -113,10 +114,10 @@ form{
 .social-icons a{
     display: inline-flex;
     padding: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid var(--color-border-light);
     border-radius: 8px;
     font-size: 24px;
-    color: #333;
+    color: var(--color-text-primary);
     text-decoration: none;
     margin: 0 8px;
 }
@@ -144,7 +145,7 @@ form{
     position: absolute;
     width: 50%;
     height: 100%;
-    color: #fff;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +177,7 @@ form{
     width: 160px;
     height: 46px;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--color-white);
     box-shadow: none;
 }
 @media screen and (max-width: 650px){
