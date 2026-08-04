@@ -1,28 +1,3 @@
-const menuBtn = document.getElementById('menu-Btn');
-const menuPanel = document.getElementById('menu-panel');
-
-if (menuBtn && menuPanel) {
-  menuBtn.addEventListener('click', () => {
-    const isOpen = menuPanel.style.left === '0' || menuPanel.classList.contains('is-open');
-    if (isOpen) {
-      menuPanel.classList.remove('is-open');
-      menuPanel.style.left = '-250px';
-      return;
-    }
-    menuPanel.classList.add('is-open');
-    menuPanel.style.display = 'flex';
-    menuPanel.style.left = '0';
-  });
-
-  document.addEventListener('click', (e) => {
-    const isClickInside = menuPanel.contains(e.target) || menuBtn.contains(e.target);
-    if (!isClickInside && (menuPanel.style.left === '0' || menuPanel.classList.contains('is-open'))) {
-      menuPanel.classList.remove('is-open');
-      menuPanel.style.left = '-250px';
-    }
-  });
-}
-
 const PER_PAGE = 30;
 
 const cardGroup = document.getElementById('card-group');
@@ -60,7 +35,7 @@ function renderBooks() {
     return;
   }
 
-cardGroup.innerHTML = pageBooks.map(book => {
+  cardGroup.innerHTML = pageBooks.map(book => {
     return `
       <div class="card fav-card">
         <div class="fav-card-inner">
