@@ -386,6 +386,11 @@ hr{
 .table-wrap{
    overflow: scroll;
    overflow-x: auto;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+}
+.table-wrap::-webkit-scrollbar{
+   display:none;
 }
 th{
    background:var(--color-table-header);
