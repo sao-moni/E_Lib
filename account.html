@@ -31,12 +31,26 @@
 
   </header>
   <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="Account.html">Account</a>
-    <a href="LoginPage.html">Login</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="account.html">Account</a>
+        <a href="LoginPage.html">Login</a>
+        <button class="btn" id="menu-Btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div class="menu-panel" id="menu-panel">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+            <div class="title">
+                <h1>E-Library</h1>
+                <p>Education is our prioutity</p>
+            </div>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="account.html">Account</a>
+        <a href="LoginPage.html">Login</a>
+    </div>
   <!-- Main -->
   <main class="container">
     <!-- Content -->
@@ -64,7 +78,7 @@
       </div>
       <div class="article">
         <div id="header">
-          <i class="fa-regular fa-heart st-text"><span>  Favorite Books</span></i>
+          <i class="fa-regular fa-heart st-text"><span> Favorite Books</span></i>
         </div>
         <div class="nd-bd">
           <div class="fav">
@@ -109,21 +123,21 @@
             <th>Progress</th>
             <th></th>
           </tr>
-        
+
           <tr>
             <td>Atomic Habits</td>
             <td>Sep 3 2026</td>
             <td>65%</td>
             <td><button>Continue</button></td>
           </tr>
-        
+
           <tr>
             <td>Deep Work</td>
             <td>Sep 3 2026</td>
             <td>40%</td>
             <td><button>Continue</button></td>
           </tr>
-        
+
           <tr>
             <td>Psychology of Money</td>
             <td>Sep 3 2026</td>
@@ -159,6 +173,32 @@
     </div>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById('menu-Btn');
+    const menuPanel = document.getElementById('menu-panel');
+
+    if (menuBtn && menuPanel) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = menuPanel.style.left === '0' || menuPanel.classList.contains('is-open');
+        if (isOpen) {
+          menuPanel.classList.remove('is-open');
+          menuPanel.style.left = '-250px';
+          return;
+        }
+        menuPanel.classList.add('is-open');
+        menuPanel.style.display = 'flex';
+        menuPanel.style.left = '0';
+      });
+
+      document.addEventListener('click', (e) => {
+        const isClickInside = menuPanel.contains(e.target) || menuBtn.contains(e.target);
+        if (!isClickInside && (menuPanel.style.left === '0' || menuPanel.classList.contains('is-open'))) {
+          menuPanel.classList.remove('is-open');
+          menuPanel.style.left = '-250px';
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
