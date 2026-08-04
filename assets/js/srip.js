@@ -8,3 +8,17 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 });
+
+const after_login = document.getElementById("login_form")
+const after_register = document.getElementById("register_form")
+
+after_login.addEventListener("submit",function(event){
+    event.preventDefault();
+    window.location.href="index.html";
+}
+)
+after_register.addEventListener("submit",function(event){
+    event.preventDefault();
+    window.location.href="index.html";
+}
+)

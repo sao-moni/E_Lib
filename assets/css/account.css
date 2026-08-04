@@ -172,7 +172,7 @@ nav button:focus {
 }
 
 .side-content {
-   height: 100%;
+   height: auto;
    display: flex;
    flex-direction: column;
    width: 250px;
@@ -237,17 +237,21 @@ nav button:focus {
    width: 68%;
    height: 100%;
 }
-
-
-.book-panel {
+.article{
    height: 100%;
-   padding: 35px;
+   overflow: hidden;
 }
 .article .nd-bd{
    display: flex;
    justify-content: center;
    align-items: center;
    margin: 5px 10px;
+   overflow: scroll;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+.nd-bd::-webkit-scrollbar{
+   display: none;
 }
 .article .fa-regular.fa-heart.st-text{
    margin: 3px 20px;
@@ -378,6 +382,10 @@ hr{
    margin: 10px 10px 5px 10px;
    border-radius: 16px;
    border-collapse:collapse;
+}
+.table-wrap{
+   overflow: scroll;
+   overflow-x: auto;
 }
 th{
    background:var(--color-table-header);
