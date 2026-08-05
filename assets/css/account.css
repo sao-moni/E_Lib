@@ -271,7 +271,7 @@ nav button:focus {
 .edit_dialog{
    display: none;
    flex-direction: column;
-   z-index: 999;
+   z-index:1;
    border-radius: 16px;
    margin-right: auto;
    margin-left: auto;
