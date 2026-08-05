@@ -1,4 +1,4 @@
-const PER_PAGE = 30;
+const perPage = 30;
 
 const cardGroup = document.getElementById('card-group');
 const resultCount = document.getElementById('result-count');
@@ -17,15 +17,14 @@ function getFilteredBooks() {
     return matchCategory && matchSearch;
   });
 }
-
 function renderBooks() {
   const filtered = getFilteredBooks();
-  const totalPages = Math.ceil(filtered.length / PER_PAGE) || 1;
+  const totalPages = Math.ceil(filtered.length / perPage) || 1;
 
   if (currentPage > totalPages) currentPage = totalPages;
 
-  const start = (currentPage - 1) * PER_PAGE;
-  const end = start + PER_PAGE;
+  const start = (currentPage - 1) * perPage;
+  const end = start + perPage;
   const pageBooks = filtered.slice(start, end);
 
   resultCount.textContent = `Showing ${filtered.length} of ${BOOKS.length} books`;

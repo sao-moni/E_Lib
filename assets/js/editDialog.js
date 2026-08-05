@@ -3,17 +3,22 @@ const editDialog = document.getElementById('edit-dialog');
 const userProfile = document.getElementById('username');
 const emailProfile = document.getElementById('emailHolder');
 const contentDialog = document.getElementById('content');
+
 let username = 'Phen Sovannoch'
 let email = 'noch@gmail.com'
 userProfile.innerHTML = username;
 emailProfile.innerHTML = email
+
+
 editIcon.addEventListener('click', function () {
-    editDialog.style.display = 'block'
+    editDialog.style.display = 'flex'
     contentDialog.style.display = 'none'
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
+    const mainContent = document.getElementById('container')
     nameInput.value =username;
     emailInput.value =email;
+    mainContent.style.height='60vh'
     return
 }
 );
@@ -26,7 +31,7 @@ subbtn.addEventListener('click',() =>{
         emailProfile.innerHTML=newEmail;
         editDialog.style.display = 'none'
         contentDialog.style.display = 'flex'
-
+        return
     }
     else{
         alert('What the point of edit if you just use the same info :)')
