@@ -13,8 +13,6 @@
     --transition-speed: 0.3s;
     --page-max-width: 1200px;
     --page-padding-x: 20px;
-
-    /* Additional colors referenced across CSS files */
     --color-white: #ffffff;
     --color-body-bg: #f4f6fb;
     --color-border-light: #ccc;

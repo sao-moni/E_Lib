@@ -15,7 +15,7 @@ if (menuBtn && menuPanel) {
   });
 
   document.addEventListener('click', function (event) {
-    const isClickInside = menuPanel.contains(e.target) || menuBtn.contains(e.target);
+    const isClickInside = menuPanel.contains(event.target) || menuBtn.contains(event.target);
     if (!isClickInside && (menuPanel.style.left === '0' || menuPanel.classList.contains('is-open'))) {
       menuPanel.classList.remove('is-open');
       menuPanel.style.left = '-250px';

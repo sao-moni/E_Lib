@@ -267,6 +267,12 @@ nav button:focus {
       width: 100%;
    }
 }
+
+.edit_dialog{
+   display: none;
+   z-index: 999;
+}
+
 /*fav card*/
 .fav{
    height: 200px;

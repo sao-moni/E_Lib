@@ -53,22 +53,31 @@
   </div>
   <!-- Main -->
   <main class="container">
+    <!--Edit dialog-->
+    <div class="edit_dialog" id="edit-dialog">
+      <!--i didnt user form becuz it will refresh upon submit-->
+      <label for="name">Username</label><br>
+      <input type="text" id="name" placeholder="Enter your Name" required><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" placeholder="example@example.com" required><br>
+      <button type="btn" id="subProfile">Save</button>
+    </div>
     <!-- Content -->
-    <section class="content">
+    <section class="content" id="content">
       <div class="side-content">
-        <button id="edit-icon">
+        <button id="edit-icon" type="button">
           <i class="fa-regular fa-pen-to-square"></i>
         </button>
         <div class="profile">
           <img src="assets/img/logo.png" alt="profile-picture" class="profile-picture">
         </div>
         <br>
-        <h2 class="profile-name">Admin Gen-<span style="color: red;">Z</span></h2>
+        <h2 class="profile-name" id="username"></h2>
         <hr>
         <br>
         <p class="profile-info">Register Date : 12/12/25</p>
         <br>
-        <p class="profile-info">Location : Cambodia</p>
+        <p class="profile-info">Email : <span id="emailHolder"></span></p>
         <br>
         <hr><br>
         <p class="profile-info">Read Activity</p>
@@ -174,6 +183,7 @@
 
   <script src="assets/js/nav.js">
   </script>
+  <script src="assets/js/editDialog.js"></script>
 </body>
 
 </html>
