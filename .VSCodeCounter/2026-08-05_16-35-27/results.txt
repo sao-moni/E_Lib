@@ -1,0 +1,45 @@
+Date : 2026-08-05 16:35:27
+Directory : /home/azure/GENZ_ELIB
+Total : 15 files,  2023 codes, 27 comments, 187 blanks, all 2237 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          5 |      1,251 |         11 |        109 |      1,371 |
+| HTML       |          5 |        502 |         16 |         48 |        566 |
+| JavaScript |          5 |        270 |          0 |         30 |        300 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                               |         15 |      2,023 |         27 |        187 |      2,237 |
+| . (Files)                                       |          5 |        502 |         16 |         48 |        566 |
+| assets                                          |         10 |      1,521 |         11 |        139 |      1,671 |
+| assets/css                                      |          5 |      1,251 |         11 |        109 |      1,371 |
+| assets/js                                       |          5 |        270 |          0 |         30 |        300 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/azure/GENZ_ELIB/LoginPage.html            | HTML       |         76 |          0 |          5 |         81 |
+| /home/azure/GENZ_ELIB/about.html                | HTML       |        149 |          5 |         18 |        172 |
+| /home/azure/GENZ_ELIB/account.html              | HTML       |        175 |          6 |         14 |        195 |
+| /home/azure/GENZ_ELIB/assets/css/about.css      | PostCSS    |        237 |          8 |         16 |        261 |
+| /home/azure/GENZ_ELIB/assets/css/account.css    | PostCSS    |        423 |          2 |         40 |        465 |
+| /home/azure/GENZ_ELIB/assets/css/styleLogin.css | PostCSS    |        233 |          0 |          3 |        236 |
+| /home/azure/GENZ_ELIB/assets/css/styles.css     | PostCSS    |        322 |          1 |         49 |        372 |
+| /home/azure/GENZ_ELIB/assets/css/variable.css   | PostCSS    |         36 |          0 |          1 |         37 |
+| /home/azure/GENZ_ELIB/assets/js/books.js        | JavaScript |        102 |          0 |          1 |        103 |
+| /home/azure/GENZ_ELIB/assets/js/editDialog.js   | JavaScript |         37 |          0 |          4 |         41 |
+| /home/azure/GENZ_ELIB/assets/js/main.js         | JavaScript |         88 |          0 |         19 |        107 |
+| /home/azure/GENZ_ELIB/assets/js/nav.js          | JavaScript |         22 |          0 |          2 |         24 |
+| /home/azure/GENZ_ELIB/assets/js/srip.js         | JavaScript |         21 |          0 |          4 |         25 |
+| /home/azure/GENZ_ELIB/index.html                | HTML       |         88 |          5 |         10 |        103 |
+| /home/azure/GENZ_ELIB/read_panel.html           | HTML       |         14 |          0 |          1 |         15 |
+| Total                                           |            |      2,023 |         27 |        187 |      2,237 |
++-------------------------------------------------+------------+------------+------------+------------+------------+
