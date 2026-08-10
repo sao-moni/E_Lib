@@ -20,9 +20,7 @@ function getFilteredBooks() {
 function renderBooks() {
   const filtered = getFilteredBooks();
   const totalPages = Math.ceil(filtered.length / perPage) || 1;
-
   if (currentPage > totalPages) currentPage = totalPages;
-
   const start = (currentPage - 1) * perPage;
   const end = start + perPage;
   const pageBooks = filtered.slice(start, end);
@@ -33,10 +31,9 @@ function renderBooks() {
     paginationContainer.innerHTML = '';
     return;
   }
-
   cardGroup.innerHTML = pageBooks.map(book => {
     return `
-      <div class="card fav-card">
+      <div class="card fav-card" id="bookCard">
         <div class="fav-card-inner">
           <img src="${book.cover}" alt="${book.title}">
           <p id="title">${book.title}</p>
@@ -45,7 +42,7 @@ function renderBooks() {
       </div>
     `;
   }).join('');
-
+  const bookCard = document.getElementById('bookCard')
   renderPagination(totalPages);
 }
 
