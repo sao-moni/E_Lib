@@ -7,7 +7,8 @@ const getDefualtContent = chapterContent.filter((contentDefualt)=> contentDefual
 
 if (sidebarLinks) {
     chapterTitle.innerHTML=defualtChapter
-    content.innerHTML = getDefualtContent.map((defualtcontent)=>defualtcontesnt.content)
+    content.innerHTML = getDefualtContent.map((defualtcontent)=>defualtcontent.content)
+    sidebarLinks[0].style.fontWeight='bold'
     sidebarLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -19,7 +20,6 @@ if (sidebarLinks) {
             chapterTitle.innerHTML = getChapter.map((title) => title.chapter)
             content.innerHTML = getChapter.map((content) => content.content)
         });
-
     });
 }
 /* Still in Devlopment */

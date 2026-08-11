@@ -30,21 +30,14 @@ subbtn.addEventListener('click',() =>{
         emailProfile.innerHTML=newEmail;
         editDialog.style.display = 'none'
         contentDialog.style.display = 'flex'
-        return
     }
     else{
         alert('What the point of edit if you just use the same info :)')
     }
-    return
 })
 /* not yet fully work still need modify( when user enter the info it still use the old var)*/
 
 /*continue btn function */
-const continueBtn = document.getElementById('continueBtn')
-
-if(continueBtn){
-    continueBtn.addEventListener('click',(e)=>{
-        e.preventDefault
-        window.location.href='../../read_panel.html'
-    })
+function redirectToHome(){
+    window.location.href="../../read_panel.html"
 }
