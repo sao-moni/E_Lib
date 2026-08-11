@@ -1,0 +1,14 @@
+"filename", "language", "HTML", "JavaScript", "PostCSS", "comment", "blank", "total"
+"/home/azure/GENZ_ELIB/404.html", "HTML", 10, 0, 0, 0, 1, 11
+"/home/azure/GENZ_ELIB/account.html", "HTML", 1, 0, 0, 0, 0, 1
+"/home/azure/GENZ_ELIB/assets/css/read.css", "PostCSS", 0, 0, 211, 0, 28, 239
+"/home/azure/GENZ_ELIB/assets/js/chapterContent.js", "JavaScript", 0, 9, 0, 0, 0, 9
+"/home/azure/GENZ_ELIB/assets/js/chapterSelector.js", "JavaScript", 0, 22, 0, 1, 2, 25
+"/home/azure/GENZ_ELIB/assets/js/editDialog.js", "JavaScript", 0, 7, 0, 3, -1, 9
+"/home/azure/GENZ_ELIB/assets/js/main.js", "JavaScript", 0, 1, 0, 2, -8, -5
+"/home/azure/GENZ_ELIB/assets/js/nav.js", "JavaScript", 0, 0, 0, 3, -1, 2
+"/home/azure/GENZ_ELIB/assets/js/readTracker.js", "JavaScript", 0, 13, 0, 1, 2, 16
+"/home/azure/GENZ_ELIB/assets/js/searchRedirect.js", "JavaScript", 0, 6, 0, 3, 1, 10
+"/home/azure/GENZ_ELIB/assets/js/srip.js", "JavaScript", 0, 0, 0, 1, -1, 0
+"/home/azure/GENZ_ELIB/read_panel.html", "HTML", 84, 0, 0, 5, 7, 96
+"Total", "-", 95, 58, 211, 19, 30, 413

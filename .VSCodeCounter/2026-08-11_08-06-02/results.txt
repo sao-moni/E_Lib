@@ -1,0 +1,51 @@
+Date : 2026-08-11 08:06:02
+Directory : /home/azure/GENZ_ELIB
+Total : 21 files,  2387 codes, 46 comments, 217 blanks, all 2650 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |          6 |      1,462 |         11 |        137 |      1,610 |
+| HTML       |          6 |        597 |         21 |         56 |        674 |
+| JavaScript |          9 |        328 |         14 |         24 |        366 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                               | files      | code       | comment    | blank      | total      |
++----------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                  |         21 |      2,387 |         46 |        217 |      2,650 |
+| . (Files)                                          |          6 |        597 |         21 |         56 |        674 |
+| assets                                             |         15 |      1,790 |         25 |        161 |      1,976 |
+| assets/css                                         |          6 |      1,462 |         11 |        137 |      1,610 |
+| assets/js                                          |          9 |        328 |         14 |         24 |        366 |
++----------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                           | language   | code       | comment    | blank      | total      |
++----------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/azure/GENZ_ELIB/404.html                     | HTML       |         10 |          0 |          1 |         11 |
+| /home/azure/GENZ_ELIB/LoginPage.html               | HTML       |         76 |          0 |          5 |         81 |
+| /home/azure/GENZ_ELIB/about.html                   | HTML       |        149 |          5 |         18 |        172 |
+| /home/azure/GENZ_ELIB/account.html                 | HTML       |        176 |          6 |         14 |        196 |
+| /home/azure/GENZ_ELIB/assets/css/about.css         | PostCSS    |        237 |          8 |         16 |        261 |
+| /home/azure/GENZ_ELIB/assets/css/account.css       | PostCSS    |        423 |          2 |         40 |        465 |
+| /home/azure/GENZ_ELIB/assets/css/read.css          | PostCSS    |        211 |          0 |         28 |        239 |
+| /home/azure/GENZ_ELIB/assets/css/styleLogin.css    | PostCSS    |        233 |          0 |          3 |        236 |
+| /home/azure/GENZ_ELIB/assets/css/styles.css        | PostCSS    |        322 |          1 |         49 |        372 |
+| /home/azure/GENZ_ELIB/assets/css/variable.css      | PostCSS    |         36 |          0 |          1 |         37 |
+| /home/azure/GENZ_ELIB/assets/js/books.js           | JavaScript |        102 |          0 |          1 |        103 |
+| /home/azure/GENZ_ELIB/assets/js/chapterContent.js  | JavaScript |          9 |          0 |          0 |          9 |
+| /home/azure/GENZ_ELIB/assets/js/chapterSelector.js | JavaScript |         22 |          1 |          2 |         25 |
+| /home/azure/GENZ_ELIB/assets/js/editDialog.js      | JavaScript |         44 |          3 |          3 |         50 |
+| /home/azure/GENZ_ELIB/assets/js/main.js            | JavaScript |         89 |          2 |         11 |        102 |
+| /home/azure/GENZ_ELIB/assets/js/nav.js             | JavaScript |         22 |          3 |          1 |         26 |
+| /home/azure/GENZ_ELIB/assets/js/readTracker.js     | JavaScript |         13 |          1 |          2 |         16 |
+| /home/azure/GENZ_ELIB/assets/js/searchRedirect.js  | JavaScript |          6 |          3 |          1 |         10 |
+| /home/azure/GENZ_ELIB/assets/js/srip.js            | JavaScript |         21 |          1 |          3 |         25 |
+| /home/azure/GENZ_ELIB/index.html                   | HTML       |         88 |          5 |         10 |        103 |
+| /home/azure/GENZ_ELIB/read_panel.html              | HTML       |         98 |          5 |          8 |        111 |
+| Total                                              |            |      2,387 |         46 |        217 |      2,650 |
++----------------------------------------------------+------------+------------+------------+------------+------------+
