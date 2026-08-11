@@ -38,3 +38,13 @@ subbtn.addEventListener('click',() =>{
     return
 })
 /* not yet fully work still need modify( when user enter the info it still use the old var)*/
+
+/*continue btn function */
+const continueBtn = document.getElementById('continueBtn')
+
+if(continueBtn){
+    continueBtn.addEventListener('click',(e)=>{
+        e.preventDefault
+        window.location.href='../../read_panel.html'
+    })
+}
