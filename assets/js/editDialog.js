@@ -8,8 +8,7 @@ let username = 'Phen Sovannoch'
 let email = 'noch@gmail.com'
 userProfile.innerHTML = username;
 emailProfile.innerHTML = email
-
-
+/*listen for click on the edit icon and excute the func */
 editIcon.addEventListener('click', function () {
     editDialog.style.display = 'flex'
     contentDialog.style.display = 'none'
@@ -38,3 +37,4 @@ subbtn.addEventListener('click',() =>{
     }
     return
 })
+/* not yet fully work still need modify( when user enter the info it still use the old var)*/

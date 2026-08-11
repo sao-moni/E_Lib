@@ -22,3 +22,4 @@ after_register.addEventListener("submit",function(event){
     window.location.href="index.html";
 }
 )
+/* All work just bypass the auth */

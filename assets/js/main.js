@@ -1,15 +1,12 @@
 const perPage = 30;
-
 const cardGroup = document.getElementById('card-group');
 const resultCount = document.getElementById('result-count');
 const searchInput = document.querySelector('.search input');
 const sidebarLinks = document.querySelectorAll('.sidebar a');
 const paginationContainer = document.getElementById('pagination');
-
 let activeCategory = 'All';
 let searchQuery = '';
 let currentPage = 1;
-
 function getFilteredBooks() {
   return BOOKS.filter(book => {
     const matchCategory = activeCategory === 'All' || book.category === activeCategory;
@@ -17,6 +14,7 @@ function getFilteredBooks() {
     return matchCategory && matchSearch;
   });
 }
+/* render book to the page*/
 function renderBooks() {
   const filtered = getFilteredBooks();
   const totalPages = Math.ceil(filtered.length / perPage) || 1;
@@ -101,3 +99,4 @@ if (sidebarLinks) {
 }
 
 renderBooks();
+/* All work */

@@ -1,6 +1,6 @@
 const menuBtn = document.getElementById('menu-Btn');
 const menuPanel = document.getElementById('menu-panel');
-
+/*check is both btn exist or not */
 if (menuBtn && menuPanel) {
   menuBtn.addEventListener('click', function () {
     const isOpen = menuPanel.style.left === '0' || menuPanel.classList.contains('is-open');
@@ -13,7 +13,7 @@ if (menuBtn && menuPanel) {
     menuPanel.style.display = 'flex';
     menuPanel.style.left = '0';
   });
-
+  /*listen for the click outside menu panel */
   document.addEventListener('click', function (event) {
     const isClickInside = menuPanel.contains(event.target) || menuBtn.contains(event.target);
     if (!isClickInside && (menuPanel.style.left === '0' || menuPanel.classList.contains('is-open'))) {
@@ -22,3 +22,5 @@ if (menuBtn && menuPanel) {
     }
   });
 }
+
+/* All work */

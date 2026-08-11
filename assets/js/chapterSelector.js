@@ -1,12 +1,19 @@
 const chapterTitle = document.getElementById('chapterTitle')
 let activeChapter = 'Chapter1';
-function getChapter(){
-    return chapterContent.filter(chapter => {
-        const matchChapter = activeChapter === 'Chapter1' || chapterContent.chapter === activeChapter;
-        return matchChapter
-    })
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+
+if (sidebarLinks) {
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = link.getAttribute('href');
+      activeChapter = href ? href.replace('#', '') : 'Chapter1';
+      sidebarLinks.forEach(l => l.style.fontWeight = 'normal');
+      link.style.fontWeight = 'bold';
+      alert(sidebarLinks)
+    });
+  });
 }
-function loadChapter(){
-    const chapter = getChapter()
-    
-}
+
+/* Still in Devlopment */
