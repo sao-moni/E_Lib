@@ -1,15 +1,12 @@
 const perPage = 30;
-
 const cardGroup = document.getElementById('card-group');
 const resultCount = document.getElementById('result-count');
 const searchInput = document.querySelector('.search input');
 const sidebarLinks = document.querySelectorAll('.sidebar a');
 const paginationContainer = document.getElementById('pagination');
-
 let activeCategory = 'All';
 let searchQuery = '';
 let currentPage = 1;
-
 function getFilteredBooks() {
   return BOOKS.filter(book => {
     const matchCategory = activeCategory === 'All' || book.category === activeCategory;
@@ -17,12 +14,11 @@ function getFilteredBooks() {
     return matchCategory && matchSearch;
   });
 }
+/* render book to the page*/
 function renderBooks() {
   const filtered = getFilteredBooks();
   const totalPages = Math.ceil(filtered.length / perPage) || 1;
-
   if (currentPage > totalPages) currentPage = totalPages;
-
   const start = (currentPage - 1) * perPage;
   const end = start + perPage;
   const pageBooks = filtered.slice(start, end);
@@ -33,10 +29,9 @@ function renderBooks() {
     paginationContainer.innerHTML = '';
     return;
   }
-
   cardGroup.innerHTML = pageBooks.map(book => {
     return `
-      <div class="card fav-card">
+      <div class="card fav-card" id="bookCard">
         <div class="fav-card-inner">
           <img src="${book.cover}" alt="${book.title}">
           <p id="title">${book.title}</p>
@@ -45,7 +40,7 @@ function renderBooks() {
       </div>
     `;
   }).join('');
-
+  const bookCard = document.getElementById('bookCard')
   renderPagination(totalPages);
 }
 
@@ -104,3 +99,4 @@ if (sidebarLinks) {
 }
 
 renderBooks();
+/* All work */

@@ -1,0 +1,9 @@
+const chapterContent = [
+  { chapter: "Chapter 1", content: "An introduction to JavaScript fundamentals, setting up your developer environment, and writing your very first 'Hello World' program." },
+  { chapter: "Chapter 2", content: "Understanding variable declarations using var, let, and const, along with primitive data types like strings, numbers, and booleans." },
+  { chapter: "Chapter 3", content: "Mastering control flow structures including if-else conditional statements, switch cases, and various looping mechanisms like for and while." },
+  { chapter: "Chapter 4", content: "Deep dive into functions, exploring function declarations, arrow functions, parameter defaults, and scope management." },
+  { chapter: "Chapter 5", content: "Working with complex data structures: manipulating arrays with higher-order methods like map, filter, and reduce." },
+  { chapter: "Chapter 6", content: "Object-oriented programming concepts in JavaScript, including objects, prototypes, classes, and inheritance patterns." },
+  { chapter: "Chapter 7", content: "Asynchronous JavaScript essentials covering Callbacks, Promises, and modern async/await syntax for network requests." }
+];

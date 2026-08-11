@@ -23,7 +23,7 @@
     </div>
 
     <div class="search">
-      <input type="text" placeholder="Search books...">
+      <input type="text" placeholder="Search books..." id="sovannochSearch">
       <button>
         <i class="fa fa-search"></i>
       </button>
@@ -131,7 +131,7 @@
         <div class="nd-icon">
           <i class="fa-solid fa-clock-rotate-left"><span>Reading History</span></i>
         </div>
-        <div class="table-wrap">
+        <div class="table-wrap" id="cnBtnWrap">
           <table class="Reading-H">
             <tr>
               <th>Book</th>
@@ -144,21 +144,21 @@
               <td>Atomic Habits</td>
               <td>Sep 3 2026</td>
               <td>65%</td>
-              <td><button>Continue</button></td>
+              <td><button onclick="redirectToHome()">Continue</button></td>
             </tr>
 
             <tr>
               <td>Deep Work</td>
               <td>Sep 3 2026</td>
               <td>40%</td>
-              <td><button>Continue</button></td>
+              <td><button onclick="redirectToHome()">Continue</button></td>
             </tr>
 
             <tr>
               <td>Psychology of Money</td>
               <td>Sep 3 2026</td>
               <td>82%</td>
-              <td><button>Continue</button></td>
+              <td><button onclick="redirectToHome()">Continue</button></td>
             </tr>
           </table>
         </div>
@@ -190,6 +190,7 @@
   <script src="assets/js/nav.js">
   </script>
   <script src="assets/js/editDialog.js"></script>
+  <script src="assets/js/searchRedirect.js"></script>
 </body>
 
 </html>

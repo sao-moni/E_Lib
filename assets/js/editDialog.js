@@ -8,8 +8,7 @@ let username = 'Phen Sovannoch'
 let email = 'noch@gmail.com'
 userProfile.innerHTML = username;
 emailProfile.innerHTML = email
-
-
+/*listen for click on the edit icon and excute the func */
 editIcon.addEventListener('click', function () {
     editDialog.style.display = 'flex'
     contentDialog.style.display = 'none'
@@ -31,10 +30,14 @@ subbtn.addEventListener('click',() =>{
         emailProfile.innerHTML=newEmail;
         editDialog.style.display = 'none'
         contentDialog.style.display = 'flex'
-        return
     }
     else{
         alert('What the point of edit if you just use the same info :)')
     }
-    return
 })
+/* not yet fully work still need modify( when user enter the info it still use the old var)*/
+
+/*continue btn function */
+function redirectToHome(){
+    window.location.href="../../read_panel.html"
+}

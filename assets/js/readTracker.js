@@ -13,3 +13,4 @@ window.addEventListener('scroll',function(){
     }
     console.log(getPercentage)
 })
+/* Still in Devlopment */
