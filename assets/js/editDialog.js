@@ -17,7 +17,7 @@ editIcon.addEventListener('click', function () {
     const mainContent = document.getElementById('container')
     nameInput.value =username;
     emailInput.value =email;
-    mainContent.style.height='60vh'
+    mainContent.style.height='75vh'
     return
 }
 );
