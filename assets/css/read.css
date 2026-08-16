@@ -114,6 +114,7 @@ nav button:focus {
    height: 100vh;
    background:rgb(244, 246, 253,0.99);
    padding: 20px;
+   z-index: 99;
    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
    transition: all 0.3s ease-in-out;
    transition-duration: 0.3s;
@@ -151,6 +152,7 @@ nav button:focus {
 .container {
    display: flex;
    width: 90%;
+   height: fit-content;
    margin: 40px auto;
    gap: 30px;
 }
@@ -217,20 +219,28 @@ nav button:focus {
     text-align: center;
     color:var(--color-primary)
 }
-.contentIcon{
-   position: absolute;
-   right: 10%;
-   bottom: 30%;
+.contentIcon{  
+
+   position: sticky;
+   display: flex;
+   z-index: 1;
+   justify-content: space-around;
+   background: var(--color-white);
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 .contentBtn{
    cursor: pointer;
    width: 50px;
    height: 50px;
-   border-radius: 50px;
    background-color: var(--color-primary);
 }
-.contentBtn i{
-   color: white;
+.chanpterHolder{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 85%;
 }
 footer {
    margin-top: 40px;

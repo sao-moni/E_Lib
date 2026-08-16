@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book | E-Library</title>
-
     <link rel="stylesheet" href="assets/css/read.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -77,12 +76,16 @@
             <h2 class="bookTitle" id="chapterTitle"></h2>
             <hr>
             <br>
-            <p id="chapterContent"></p>     
+            <p id="chapterContent"></p>
+
         </section>
+        <div class="contentIcon" id="contentBar">
+            <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
+            <div class="chanpterHolder"><p>Chapter</p></div>
+            <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
+        </div>
     </main>
-    <div class="contentIcon">
-        <button class="contentBtn"><i class="fa-light fa-book"></i></button>
-    </div>
+
     <!-- Footer -->
     <footer>
         <div class="footer-left">
@@ -110,5 +113,7 @@
     <script src="assets/js/searchRedirect.js"></script>
     <script src="assets/js/chapterContent.js"></script>
     <script src="assets/js/chapterSelector.js"></script>
+    <script src="assets/js/contentIcon.js"></script>
 </body>
+
 </html>
