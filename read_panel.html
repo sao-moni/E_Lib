@@ -2,118 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book | E-Library</title>
-    <link rel="stylesheet" href="assets/css/read.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book | E-Library</title>
+  <link rel="stylesheet" href="assets/css/read.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo">
-            <div class="title">
-                <h1>E-Library</h1>
-                <p>Education is our prioutity</p>
-            </div>
-        </div>
+  <header>
+      <div class="logo">
+          <img src="assets/img/logo.png" alt="Logo">
+          <div class="title">
+              <h1>E-Library</h1>
+              <p>Education is our prioutity</p>
+          </div>
+      </div>
 
-        <div class="search">
-            <input type="text" placeholder="Search books..." id="sovannochSearch">
-            <button id="sovannochbtn">
-                <i class="fa fa-search" id="sovannochbtn"></i>
-            </button>
-        </div>
+      <div class="search">
+          <input type="text" placeholder="Search books..." id="sovannochSearch">
+          <button id="sovannochbtn">
+              <i class="fa fa-search" id="sovannochbtn"></i>
+          </button>
+      </div>
 
-    </header>
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="account.html">Account</a>
-        <a href="LoginPage.html">Login</a>
-        <button class="btn" id="menu-Btn"><i class="fa-solid fa-bars"></i></button>
-    </nav>
-    <div class="menu-panel" id="menu-panel">
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo">
-            <div class="title">
-                <h1>E-Library</h1>
-                <p>Education is our prioutity</p>
-            </div>
-        </div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="account.html">Account</a>
-        <a href="LoginPage.html">Login</a>
-    </div>
-    <!-- Main -->
-    <main class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Book Sample</h2>
-            <ul>
-                <li><a href="#Chapter 1">Chapter 1</a></li>
-                <li><a href="#Chapter 2">Chapter 2</a></li>
-                <li><a href="#Chapter 3">Chapter 3</a></li>
-                <li><a href="#Chapter 4">Chapter 4</a></li>
-                <li><a href="#Chapter 5">Chapter 5</a></li>
-                <li><a href="#Chapter 6">Chapter 6</a></li>
-                <li><a href="#Chapter 7">Chapter 7</a></li>
-            </ul>
-            <div class="progressBar">
-                <h4 style="text-align: center;">Progress</h4>
-                <div class="barOfProgress">
-                    <div class="insideBarOfProgress" id="processBar">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Content -->
-        <section class="content">
-            <h2 class="bookTitle" id="chapterTitle"></h2>
-            <hr>
-            <br>
-            <p id="chapterContent"></p>
+  </header>
+  <!-- Navigation -->
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="account.html">Account</a>
+      <a href="LoginPage.html">Login</a>
+      <button class="btn" id="menu-Btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+  <div class="menu-panel" id="menu-panel">
+      <div class="logo">
+          <img src="assets/img/logo.png" alt="Logo">
+          <div class="title">
+              <h1>E-Library</h1>
+              <p>Education is our prioutity</p>
+          </div>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="account.html">Account</a>
+      <a href="LoginPage.html">Login</a>
+  </div>
+  <!-- Main -->
+  <main class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <h2>Book Sample</h2>
+          <ul>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 1">Chapter 1</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 2">Chapter 2</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 3">Chapter 3</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 4">Chapter 4</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 5">Chapter 5</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 6">Chapter 6</a></li>
+              <li> <i class="fa-solid fa-circle-dot"></i> <a href="#Chapter 7">Chapter 7</a></li>
+          </ul>
+          <div class="progressBar">
+              <h4 style="text-align: center;">Progress</h4>
+              <div class="barOfProgress">
+                  <div class="insideBarOfProgress" id="processBar">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Content -->
+      <section class="content">
+          <h2 class="bookTitle" id="chapterTitle"></h2>
+          <hr>
+          <br>
+          <p id="chapterContent"></p>
+      </section>
+      <div class="contentIcon" id="contentBar">
+          <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
+          <div class="chanpterHolder">
+              <p>Chapter</p>
+          </div>
+          <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
+      </div>
+  </main>
 
-        </section>
-        <div class="contentIcon" id="contentBar">
-            <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
-            <div class="chanpterHolder"><p>Chapter</p></div>
-            <button class="contentBtn" id="contentBtn"><span style="color: white; font-weight: 900;"><</span></button>
-        </div>
-    </main>
+  <!-- Footer -->
+  <footer>
+      <div class="footer-left">
+          <h2>E-Library</h2>
+          <p>Learning Anywhere Anytime.</p>
+      </div>
+      <div class="footer-center">
+          <h3>Quick Links</h3>
+          <p>Home</p>
+          <p>Books</p>
+          <p>About</p>
+          <p>Contact</p>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-left">
-            <h2>E-Library</h2>
-            <p>Learning Anywhere Anytime.</p>
-        </div>
-        <div class="footer-center">
-            <h3>Quick Links</h3>
-            <p>Home</p>
-            <p>Books</p>
-            <p>About</p>
-            <p>Contact</p>
-        </div>
+      <div class="footer-right">
+          <h3>Follow Us</h3>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-telegram"></i>
+      </div>
 
-        <div class="footer-right">
-            <h3>Follow Us</h3>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-telegram"></i>
-        </div>
-
-    </footer>
-    <script src="assets/js/nav.js"></script>
-    <script src="assets/js/readTracker.js"></script>
-    <script src="assets/js/searchRedirect.js"></script>
-    <script src="assets/js/chapterContent.js"></script>
-    <script src="assets/js/chapterSelector.js"></script>
-    <script src="assets/js/contentIcon.js"></script>
+  </footer>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/readTracker.js"></script>
+  <script src="assets/js/searchRedirect.js"></script>
+  <script src="assets/js/chapterContent.js"></script>
+  <script src="assets/js/chapterSelector.js"></script>
+  <script src="assets/js/contentIcon.js"></script>
 </body>
 
 </html>

@@ -183,7 +183,13 @@ nav button:focus {
    padding: 18px;
    border-bottom: 1px solid var(--color-border-soft);
    cursor: pointer;
-   
+   /* glow transition */
+   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+   /* hover(glow) */
+.sidebar li:hover, .sidebar li:focus-visible{
+   box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+   filter: brightness(1.2);
 }
 .sidebar ul li.active{
    background-color: crimson;
