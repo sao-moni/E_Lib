@@ -148,6 +148,9 @@ nav button:focus {
    .sidebar {
       display: none;
    }
+   .contentIcon{
+      display: flex;
+   }
 }
 .container {
    display: flex;
@@ -220,9 +223,9 @@ nav button:focus {
     color:var(--color-primary)
 }
 .contentIcon{  
-
    position: sticky;
-   display: flex;
+   display: none;
+   bottom:1%;
    z-index: 1;
    justify-content: space-around;
    background: var(--color-white);
