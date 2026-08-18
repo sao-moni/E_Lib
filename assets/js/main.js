@@ -40,10 +40,12 @@ function renderBooks() {
       </div>
     `;
   }).join('');
-  const bookCard = document.getElementById('bookCard')
-  bookCard.addEventListener('click',(e)=>{
-    e.preventDefault
-    window.location.href="../../read_panel.html"
+  const bookCard = document.querySelectorAll('#bookCard')
+  bookCard.forEach(cardclick =>{
+    cardclick.addEventListener('click',(e)=>{
+      e.preventDefault
+      window.location.href='../../read_panel.html'
+    })
   })
   renderPagination(totalPages);
 }
