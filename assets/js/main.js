@@ -41,6 +41,10 @@ function renderBooks() {
     `;
   }).join('');
   const bookCard = document.getElementById('bookCard')
+  bookCard.addEventListener('click',(e)=>{
+    e.preventDefault
+    window.location.href="../../read_panel.html"
+  })
   renderPagination(totalPages);
 }
 
@@ -97,6 +101,5 @@ if (sidebarLinks) {
     });
   });
 }
-
 renderBooks();
 /* All work */
