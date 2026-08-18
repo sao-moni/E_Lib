@@ -176,9 +176,11 @@ nav button:focus {
       border-bottom:1px solid var(--color-border-soft);
       cursor:pointer;
    }
-      .sidebar li:hover{
+      .sidebar li:hover, .sidebar li:focus-visible{
          background:var(--color-hover);
          color:var(--color-primary);
+         box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+         filter: brightness(1.2);
       }
 /* Content */
 
@@ -223,6 +225,8 @@ nav button:focus {
 }
    .card:hover{
       transform:translateY(-8px);
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.1);
 }
    .card i{
       font-size:40px;

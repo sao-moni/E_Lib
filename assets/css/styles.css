@@ -175,18 +175,30 @@ nav button:focus {
 .sidebar ul {
    list-style: none;
 }
-
+   
 .sidebar li {
    padding: 18px;
    border-bottom: 1px solid var(--color-border-soft);
    cursor: pointer;
+   /* glow transition */
+   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .sidebar li:hover {
    background: var(--color-hover);
    color: var(--color-primary);
 }
-
+/* hover(glow) */
+.sidebar li:hover, .sidebar li:focus-visible{
+   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+   filter: brightness(1.2);
+}
+.container li:hover .container li:focus-visible{
+   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+   filter: brightness(1.1);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
 .content {
    flex: 1;
    background: var(--color-white);
