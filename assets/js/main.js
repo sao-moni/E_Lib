@@ -104,4 +104,4 @@ if (sidebarLinks) {
   });
 }
 renderBooks();
-/* All work */
+/* All work render & redirect user to read page*/

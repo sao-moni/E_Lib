@@ -4,7 +4,7 @@ const userProfile = document.getElementById('username');
 const emailProfile = document.getElementById('emailHolder');
 const contentDialog = document.getElementById('content');
 
-let username = 'Phen Sovannoch kfjskdlfjsdkfj'
+let username = 'Phen Sovannoch'
 let email = 'noch@gmail.com'
 userProfile.innerHTML = username;
 emailProfile.innerHTML = email
