@@ -167,6 +167,7 @@ nav button:focus {
    flex-direction: row;
    background: var(--color-white);
    overflow: hidden;
+   max-width: 1170px;
    border-radius: 10px;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
@@ -271,6 +272,7 @@ nav button:focus {
 .edit_dialog{
    display: none;
    flex-direction: column;
+   align-self: center;
    z-index:1;
    border-radius: 16px;
    margin-right: auto;
@@ -278,6 +280,7 @@ nav button:focus {
    background-color:rgb(255, 255, 255);
    padding: var(--normal-padding);
    height: auto;
+   max-height: 45vh;
    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 .inputForm{
