@@ -222,6 +222,7 @@ nav button:focus {
       border-radius:10px;
       box-shadow:0 5px 10px rgba(0,0,0,.1);
       transition:.3s;
+      
 }
    .card:hover{
       transform:translateY(-8px);
