@@ -181,7 +181,9 @@ nav button:focus {
 .sidebar ul {
    list-style: none;
 }
-
+#checkDot{
+   color: rgb(119, 119, 119);
+}
 .sidebar li {
    padding: 18px;
    border-bottom: 1px solid var(--color-border-soft);
@@ -202,21 +204,7 @@ nav button:focus {
    background: var(--color-hover);
    color: var(--color-primary);
 }
-.progressBar{
-   height: fit-content;
-}
-.barOfProgress{
-   background-color: green;
-   height: 10px;
-   margin: 10px;
-   border-radius: 16px;
-   overflow: hidden;
-}
-.insideBarOfProgress{
-   background-color: aliceblue;
-   height: 10px;
-   width: 10px;
-}
+
 .content {
    flex: 1;
    background: var(--color-white);

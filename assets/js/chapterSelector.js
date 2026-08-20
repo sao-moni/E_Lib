@@ -4,7 +4,7 @@ const sidebarLinks = document.querySelectorAll('.sidebar a');
 const content = document.getElementById('chapterContent')
 const defualtChapter = 'Chapter 1'
 const getDefualtContent = chapterContent.filter((contentDefualt)=> contentDefualt.chapter === defualtChapter)
-
+const activeCri = document.querySelectorAll('#checkDot')
 if (sidebarLinks) {
     chapterTitle.innerHTML=defualtChapter
     content.innerHTML = getDefualtContent.map((defualtcontent)=>defualtcontent.content)
@@ -19,6 +19,7 @@ if (sidebarLinks) {
             const getChapter = chapterContent.filter((chapter) => chapter.chapter === modifedHref)
             chapterTitle.innerHTML = getChapter.map((title) => title.chapter)
             content.innerHTML = getChapter.map((content) => content.content)
+            activeCri.forEach()
         });
     });
 }
